@@ -1,0 +1,167 @@
+body{
+	/* background: url(../img/main.jpg) no-repeat;
+	background-size: cover; */
+	font: 400 14px/1.2 Arial, sans-serif;
+	color:  #797b7f;
+	background: linear-gradient(45deg, #ff512f, #dd2476);
+}
+
+a {
+	color: #ea355a;
+	text-decoration: none;
+}
+
+a:hover,
+a:focus {
+	text-decoration: underline;
+	color: orange;
+}
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1200px;
+}
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	border: none;
+	border-radius: 4px;
+	display: inline-block;
+	height: 50px;
+	background-color: #ea355a;
+	color: #fff;
+	font-weight: 700;
+	font-size: 18px;
+	box-shadow: 0px 3px 0px 0px #bd1962;
+	padding: 0;
+
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+	background-color: orange;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+	padding: 14px;
+	display: inline-block;
+	font-size: 14px;
+	border-radius: 4px;
+	background-color:  #f0f0f0;
+	border: none;
+	position: relative;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+	outline: none;
+
+}
+textarea {
+
+}
+label {
+	display: block;
+	margin-bottom: 15px;
+	color:  #797b7f;
+}
+
+.ba-form {
+	max-width: 470px;
+	margin: 0 auto;
+	background-color: #fff;
+	padding: 31px;
+}
+main {
+	padding: 60px 20px;
+}
+.ba-btn {
+	margin-bottom: 27px;
+}
+.ba-form-row {
+	margin-bottom: 15px;
+}
+.form-title {
+	z-index: 1;
+}
+.ba-form-header {
+	margin-bottom: 30px;
+}
+.ba-form-copy {
+	font-size: 12px;
+	line-height: 20px;
+	letter-spacing: 0.03em;
+}
+.ba-col-6 + .ba-col-6 {
+	padding-left: 14px;
+}
+.ba-form-header__title {
+	font: 700 24px/1.2 Arial, sans-serif;
+	color: #000;
+	margin-bottom: 14px;
+	display: flex;
+	align-items: center;
+}
+.ba-form-header__desc {
+	font-size: 13px;
+	line-height: 20px;
+	letter-spacing: 0.03em;
+}
+.ba-form-header__title img {
+	margin-right: 10px;
+}
+.ba-input-anime {
+	position: relative;
+}
+.anime-2 {
+	position: relative;
+}
+.ba-input-anime label {
+	position: absolute;
+	top: 13px;
+	left: 10px;
+	transition: transform 0.4s ease-in, color 0.4s ease-in;
+}
+.ba-input-anime :focus ~ label,
+.ba-input-anime :valid ~ label  {
+	font-size: 12px;
+	color: #ea355a;
+	transform: translateY(-25px);
+}
+.anime-2 label {
+	z-index: 1;
+	position: absolute;
+	top: 13px;
+	left: 25px;
+	transition: transform 0.4s ease-in, color 0.4s ease-in;
+}
+.anime-2 :focus ~ label,
+.anime-2 :valid ~ label {
+	transform: translateY(-25px);
+	font-size: 12px;
+	color: #ea355a;
+}
